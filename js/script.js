@@ -42,7 +42,13 @@ function startTimer(){
 	console.log(inputDate);
 	console.log(inputDate<=dateNow);
 	if( inputDate != '' && inputDate>=dateNow){	
-		$($(".dateInput input")[0]).addClass("hide");
+		$($(".titleInput input")[0]).css("background-color", "#1a1c2a");
+		$($(".titleInput input")[0]).css("color", "white");
+		$($(".titleInput input")[0]).css("border", "2px solid white");
+		$($(".titleInput input")[0]).prop("disabled",true);
+		$($(".dateInput input")[0]).prop("disabled",true);
+		$($(".dateInput input")[0]).css("-webkit-app-region", "drag");
+		$($(".dateInput input")[0]).css("background-color", "grey");
 		start(inputDate);
 		let text = $(".startBtn button")[0].innerText;
 		if(text == 'Start'){

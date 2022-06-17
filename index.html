@@ -14,7 +14,10 @@
     
     
     <div class="row">
-        <div id="input" class="row">
+        <div id="input" class="">
+            <div class="titleInput">
+                <input type="text" placeholder="Title" maxlength="15">
+            </div>
             <div class="dateInput">
                 <input type="date" max="2023-01-01">
             </div>
@@ -22,7 +25,8 @@
                 <button class="button buttonGreen" onclick="startTimer()">Start</button>
             </div>
         </div>
-        <div id="errorMessage" class="hide column">Please enter a date.</div> 
+        
+        <!-- <div id="errorMessage" class="hide column">Please enter a date.</div>  -->
         <div id="pin" class="row" >
             <div class="pintab" >
                 <input type="checkbox" class="pintabinput" checked="checked"/>

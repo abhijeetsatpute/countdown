@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/abhijeetsatpute/countdown#readme",
   "dependencies": {
-    "electron": "^19.0.4"
+    "electron": "^19.0.4",
+    "electron-packager": "^15.5.1"
   }
 }
