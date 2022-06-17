@@ -1,5 +1,5 @@
 {
-  "name": "countdown",
+  "name": "Countdown",
   "version": "1.0.0",
   "description": "Countdown Days/Hours/Mins to the D day.",
   "main": "init.js",

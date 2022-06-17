@@ -36,9 +36,9 @@ body {
   animation: pingEffect 0.4s 1 forwards;
 }
 #countdown .counter b {
-  font-size: 25px;
+  font-size: 28px;
   position: absolute;
-  top: 100%;
+  top: 120%;
   left: 0;
   width: 100%;
 }
@@ -97,4 +97,164 @@ body {
   100% {
     transform: scale(1);
   }
+}
+#input {
+  font-family: monospace;
+  position: absolute;
+  left: 19%;
+  top: 11%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  padding: 100px;
+  float: left;
+}
+
+input[type="date"] {
+  font-family: monospace;
+  display:block;
+  position:relative;
+  padding:0rem 1rem 0rem 0rem;
+  
+  font-size:0.75=rem;
+  font-family:monospace;
+  
+  border:1px solid #8292a2;
+  border-radius:0rem;
+  background:
+    white
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+    right 2px
+    center
+    no-repeat;
+  background-size:  10%;
+  cursor:pointer;
+}
+input[type="date"]:focus {
+  outline:none;
+  border-color:#3acfff;
+  box-shadow:0 0 0 0rem rgba(0, 120, 250, 0.1);
+}
+
+::-webkit-datetime-edit {}
+::-webkit-datetime-edit-fields-wrapper {}
+::-webkit-datetime-edit-month-field:hover,
+::-webkit-datetime-edit-day-field:hover,
+::-webkit-datetime-edit-year-field:hover {
+  background:rgba(0, 120, 250, 0.1);
+}
+::-webkit-datetime-edit-text {
+  opacity:0;
+}
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+  display:none;
+}
+::-webkit-calendar-picker-indicator {
+  position:absolute;
+  width:0.5rem;
+  height:100%;
+  top:0;
+  right:0;
+  bottom:0;
+  
+  opacity:0;
+  cursor:pointer;
+  
+  color:rgba(0, 120, 250, 1);
+  background:rgba(0, 120, 250, 1);
+ 
+}
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator { opacity:0.05; }
+input[type="date"]:hover::-webkit-calendar-picker-indicator:hover { opacity:0.15; }
+
+.button {
+  font-family: monospace;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding:3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 50px;
+  height: 19px;
+}
+
+.buttonGreen {
+  background-color: #88B04B;
+  color: whitesmoke;
+}
+.buttonGreen:hover {
+  color: white;
+}
+
+.buttonRed {
+  background-color: #FF6F61;
+  color: white;
+}
+.buttonRed:hover {
+  color: whitesmoke;
+}
+
+#errorMessage{
+  color: #FF6F61;
+  font-size: 12px;
+  text-align: left;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#pin{
+  font-size: 16px;
+  text-align: right;
+  top: -20px;
+}
+
+#pin input {
+  size: 1%;
+}
+
+.column {
+  text-align: left;
+  float: left;
+  width: 80%;
+  padding: 15px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* PIN */
+
+.pintab{
+  cursor:pointer;
+  position:relative;
+  display:inline-block;
+  box-shadow:0px 3px 2px -2px #000;
+}
+.pintabinput{
+  opacity:0.01;
+}
+.pintab i{
+  transition:top 0.1s cubic-bezier(0.82, -0.03, 0.58, 1), color 0.1s ease-in-out 0.1s;
+  position:absolute;
+  left:3px;
+  top:-5px;
+  cursor:pointer;
+  color:#f9f9f9;
+  font-size:18px;
+}
+.cckd{
+  top:0px !important;
+  color:#2ecc71 !important;
 }

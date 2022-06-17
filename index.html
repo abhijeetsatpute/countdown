@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/c67bc484ed.js"></script>
+    
     <link rel="stylesheet" href="./css/styles.css">
     <title>Countdown</title>
 </head>
-<body style="-webkit-app-region: drag">
-    <div id="countdown">
-        <div class="counter"><span b="--"></span><b>Days</b></div>
+<body >
+    
+    
+    <div class="row">
+        <div id="input" class="row">
+            <div class="dateInput">
+                <input type="date" max="2023-01-01">
+            </div>
+            <div class="startBtn">
+                <button class="button buttonGreen" onclick="startTimer()">Start</button>
+            </div>
+        </div>
+        <div id="errorMessage" class="hide column">Please enter a date.</div> 
+        <div id="pin" class="row" >
+            <div class="pintab" >
+                <input type="checkbox" class="pintabinput" checked="checked"/>
+                <i class="fa fa-thumb-tack cckd"></i>
+            </div>
+        </div>
+    </div>
+    <div id="countdown" style="-webkit-app-region: drag">
+        <div  class="counter"><span b="--"></span><b>Days</b></div>
         <div class="counter"><span b="--"></span><b>Hrs</b></div>
         <div class="counter"><span b="--"></span><b>Min</b></div>
         <div class="counter"><span b="--"></span><b>Sec</b></div>
     </div>
+    <script src="./js/pin.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

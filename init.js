@@ -4,7 +4,7 @@ const createWindow = () => {
     const win = new BrowserWindow({
         icon:'icon.png',
         width: 420,
-        height: 130,
+        height: 140,
         resizable: false,
         maximizable: false,
         titleBarStyle: 'hidden',
