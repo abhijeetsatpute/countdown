@@ -1,4 +1,4 @@
-let dateIp = prompt("Enter Date in YEAR-MM-DD Format");
+let dateIp = '2022-08-19'; //prompt("Enter Date in YEAR-MM-DD Format");
 let d = new Date(`${dateIp}T00:10:00`) - new Date();
 const l = Array.from(document.querySelectorAll('span')).reverse();
 const s = [1000,60,60,24];

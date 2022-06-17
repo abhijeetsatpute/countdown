@@ -4,7 +4,8 @@
   "description": "Countdown Days/Hours/Mins to the D day.",
   "main": "init.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
   },
   "repository": {
     "type": "git",
