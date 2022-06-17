@@ -4,7 +4,7 @@
   "description": "Countdown Days/Hours/Mins to the D day.",
   "main": "init.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/abhijeetsatpute/countdown/issues"
   },
-  "homepage": "https://github.com/abhijeetsatpute/countdown#readme"
+  "homepage": "https://github.com/abhijeetsatpute/countdown#readme",
+  "dependencies": {
+    "electron": "^19.0.4"
+  }
 }
