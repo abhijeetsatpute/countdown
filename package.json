@@ -1,0 +1,29 @@
+{
+  "name": "Countdown",
+  "version": "1.0.0",
+  "description": "Countdown Days/Hours/Mins to the D day.",
+  "main": "init.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhijeetsatpute/countdown.git"
+  },
+  "keywords": [
+    "countdown",
+    "electron",
+    "D-day"
+  ],
+  "author": "Abhijeet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhijeetsatpute/countdown/issues"
+  },
+  "homepage": "https://github.com/abhijeetsatpute/countdown#readme",
+  "dependencies": {
+    "electron": "^19.0.4",
+    "electron-packager": "^15.5.1"
+  }
+}
